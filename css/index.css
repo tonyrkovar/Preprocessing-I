@@ -1,1 +1,251 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  background-color: #fcfbf8;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Arvo', serif;
+}
+.center-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-underline {
+  border-bottom: 2px solid #154975;
+}
+@media (max-width: 500px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+}
+body header nav {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  body header nav {
+    justify-content: center;
+  }
+}
+body header nav a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #154975;
+  margin: 2.5% 5%;
+}
+body header nav a:visited {
+  color: #627899;
+}
+body header h1 {
+  font-size: 3.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 8.5% 10%;
+}
+body .content {
+  display: flex;
+  height: 80%;
+}
+@media (max-width: 500px) {
+  body .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+}
+body .content .right-content {
+  padding-left: 5%;
+  width: 65%;
+  border-right: 2px solid #154975;
+  /*Commented out because of addition of background color */
+}
+body .content .right-content .introduction {
+  font-size: 1.2rem;
+  margin-bottom: 10%;
+}
+body .content .right-content h2 {
+  font-size: 1.55rem;
+  margin-top: 7%;
+  margin-bottom: 5%;
+  border-bottom: 2px solid #154975;
+}
+body .content .right-content li {
+  font-size: 1.2rem;
+  margin: 4% 0;
+}
+body .content .left-content {
+  width: 30%;
+  font-size: 1.2rem;
+  margin-left: 3%;
+}
+@media (max-width: 500px) {
+  body .content .left-content {
+    flex-wrap: wrap;
+  }
+}
+body .content .left-content h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-top: 14%;
+  margin-bottom: 9.5%;
+}
+body .content .skills {
+  flex-direction: column;
+}
+body .content .skills ul li {
+  margin: 30% 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
