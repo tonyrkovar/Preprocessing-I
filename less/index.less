@@ -75,11 +75,11 @@ h1, h2, h3, h4, h5, h6{
 	justify-content: center;
 }
 
-// .header-box {
-// 	background-color: #1db384;
-// 	padding: 15%;
-// 	width: 75%;
-// }
+
+.text-underline {
+	border-bottom: 2px solid @link-color;
+}
+
 
 
 
@@ -120,12 +120,13 @@ header {
 		border-right: 2px solid #154975; /*Commented out because of addition of background color */
 		.introduction{
 			font-size: 1.2rem;
-			margin: 0 5% 10% 0;
+			margin-bottom:10%;
 		}
 		h2 {
 			font-size: 1.55rem;
 			margin-top: 7%;
 			margin-bottom: 5%;
+			.text-underline();
 		}
 		li{
 			font-size: 1.2rem;
@@ -140,27 +141,24 @@ header {
 		font-size: 1.2rem;
 		margin-left: 3%;
 		h2 {
+			.center-items();
 			font-size: 1.3rem;
 			margin-top: 14%;
 			margin-bottom: 9.5%;
 		}
 	}
 	.skills {
+		
 		 // Check to make sure this looks good (This is the skills section centering)
-		.center-items();
 		flex-direction: column;
 		ul{
 			li{
-				margin: 30% 0;
+				margin: 30% 0%;
+				.center-items();
 				
 			}
 		}
-		
-		li{
-			margin: 10% 0;
-		}
-	}
 	
 }
-
+}
 
