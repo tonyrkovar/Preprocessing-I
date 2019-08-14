@@ -84,10 +84,18 @@ h1, h2, h3, h4, h5, h6{
 
 
 
-
+body{
+	@media(max-width:500px){
+		.center-items;
+		flex-wrap: wrap;
+		width: 100vw;
+	}
 header {
 	// display: flex;
 	nav {
+		@media(max-width: 500px){
+			justify-content: center;
+		}
 		display: flex;
 		justify-content: space-between;
 		a{
@@ -111,7 +119,13 @@ header {
 
 	}
 }
+
 .content{
+	@media(max-width:500px){
+		.center-items;
+		flex-wrap: wrap;
+		width: 100vw;
+	}
 	display: flex;
 	height: 80%;
 	.right-content {
@@ -140,6 +154,9 @@ header {
 		width: 30%;
 		font-size: 1.2rem;
 		margin-left: 3%;
+		@media(max-width: 500px){
+			flex-wrap: wrap;
+		}
 		h2 {
 			.center-items();
 			font-size: 1.3rem;
@@ -149,7 +166,6 @@ header {
 	}
 	.skills {
 		
-		 // Check to make sure this looks good (This is the skills section centering)
 		flex-direction: column;
 		ul{
 			li{
@@ -159,6 +175,7 @@ header {
 			}
 		}
 	
+}
 }
 }
 
