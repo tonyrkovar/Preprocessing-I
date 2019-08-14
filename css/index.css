@@ -138,9 +138,13 @@ body {
   margin: auto;
 }
 .header-box {
-  background-color: #ffad91;
+  background-color: #1db384;
   padding: 15%;
   width: 75%;
+}
+.box-styling {
+  box-shadow: 18px 18px 3px grey;
+  border-radius: 20px;
 }
 header nav {
   display: flex;
@@ -162,19 +166,49 @@ header h1 {
   width: 40%;
   margin: 10% 20%;
   text-align: center;
-  background-color: #ffad91;
+  background-color: #1db384;
   padding: 15%;
   width: 75%;
+  box-shadow: 18px 18px 3px grey;
+  border-radius: 20px;
 }
-.right-content {
+.content {
+  display: flex;
+  height: 60%;
+}
+.content .right-content {
+  background-color: purple;
   width: 65%;
 }
-.right-content .introduction {
+.content .right-content .introduction {
   font-size: 1.2rem;
-  margin-bottom: 10%;
+  margin: 0 5% 10% 0;
 }
-.right-content h2 {
-  font-size: 1.3rem;
+.content .right-content h2 {
+  font-size: 1.55rem;
   margin-top: 7%;
   margin-bottom: 5%;
+}
+.content .right-content li {
+  font-size: 1.3rem;
+}
+.content .left-content {
+  background-color: pink;
+  width: 30%;
+  font-size: 1.2rem;
+  margin-left: 3%;
+}
+.content .left-content h2 {
+  font-size: 1.3rem;
+  margin-top: 14%;
+  margin-bottom: 9.5%;
+}
+.content .skills ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content .skills li {
+  margin: 10% 0;
 }

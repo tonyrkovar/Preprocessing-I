@@ -64,9 +64,15 @@ html, body {
 @visited-link-color: #627899;
 
 .header-box {
-	background-color: #ffad91;
+	background-color: #1db384;
 	padding: 15%;
 	width: 75%;
+}
+
+.box-styling {
+	box-shadow: 18px 18px 3px grey;
+	border-radius: 20px;
+
 }
 
 
@@ -94,27 +100,57 @@ header {
 		margin: 10% 20%;
 		text-align: center;
 		.header-box();
+		.box-styling();
 
 	}
 }
+.content{
+	display: flex;
+	height: 60%;
+	.right-content {
+		background-color: purple;
+		width: 65%;
+		//border-right: 2px solid #154975; /*Commented out because of addition of background color */
+		.introduction{
+			font-size: 1.2rem;
+			margin: 0 5% 10% 0;
+		}
+		h2 {
+			font-size: 1.55rem;
+			margin-top: 7%;
+			margin-bottom: 5%;
+		}
+		li{
+			font-size: 1.3rem;
+		}
+		.work{
 
-.right-content {
-	width: 65%;
-	.introduction{
+		}
+	}
+	.left-content{
+		background-color: pink;
+		width: 30%;
 		font-size: 1.2rem;
-		margin-bottom: 10%;
+		margin-left: 3%;
+		h2 {
+			font-size: 1.3rem;
+			margin-top: 14%;
+			margin-bottom: 9.5%;
+		}
 	}
-	h2 {
-		font-size: 1.3rem;
-		margin-top: 7%;
-		margin-bottom: 5%;
+	.skills {
+		ul{ // Check to make sure this looks good (This is the skills section centering)
+		display: flex;
+		align-items: center; 
+		justify-content: center;
+		flex-direction: column;
+		}
+		
+		li{
+			margin: 10% 0;
+		}
 	}
-	.work{
-
-	}
-}
-
-.left-content{
 	
 }
+
 
